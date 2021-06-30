@@ -7,10 +7,10 @@ AbstractDialect.prototype.supports = {
   'DEFAULT VALUES': false,
   'VALUES ()': false,
   'LIMIT ON UPDATE': false,
-  'ON DUPLICATE KEY': true,
   'ORDER NULLS': false,
   'UNION': true,
   'UNION ALL': true,
+  'RIGHT JOIN': true,
 
   /* does the dialect support returning values for inserted/updated fields */
   returnValues: false,
@@ -30,6 +30,7 @@ AbstractDialect.prototype.supports = {
   bulkDefault: false,
   schemas: false,
   transactions: true,
+  settingIsolationLevelDuringTransaction: true,
   transactionOptions: {
     type: false
   },
@@ -57,7 +58,8 @@ AbstractDialect.prototype.supports = {
     concurrently: false,
     type: false,
     using: true,
-    functionBased: false
+    functionBased: false,
+    operator: false
   },
   joinTableDependent: true,
   groupedLimit: true,
