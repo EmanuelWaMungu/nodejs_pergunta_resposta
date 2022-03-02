@@ -6,8 +6,8 @@ This project I did to create an example about stackoverflow , where everyone can
 
 ### Developer 
 
-Developed by : Emanuel Wa Mungu
-Year : 2021
-Time : 2 days 
+#### Developed by : Emanuel Wa Mungu
+#### Year : 2021
+#### Time : 2 days 
 
-Tecnologies : JavaScript NodeJS Ejs
+#### Tecnologies : JavaScript NodeJS Ejs
